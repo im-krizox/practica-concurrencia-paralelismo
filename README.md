@@ -39,7 +39,6 @@ El sistema está organizado en las siguientes etapas principales:
 
 - Python 3.6 o superior
 - Sistema operativo compatible con tensorflow, asyncio, threading y multiprocessing
-- 
 
 ## Instalación
 
@@ -58,9 +57,13 @@ cd practica-concurrencia-paralelismo/
 pip install tensorflow Pillow
 ```
 
-4. Ejecutar el script:
+4. Ejecutar los scripts:
 ```bash
-python simulacion-hospitalaria.py
+python3 simulacion-hospitalaria.py
+```
+
+```bash
+python3 simulacion-hospitalaria-ia.py
 ```
 
 ## Uso
