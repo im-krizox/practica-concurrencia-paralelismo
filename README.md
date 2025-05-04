@@ -16,6 +16,7 @@ Este proyecto implementa una simulación avanzada de un sistema hospitalario uti
 ## Tecnologías Utilizadas
 
 - Python 3.x
+- Modelo preentrenado para el procesamiento de imágenes (VGG16). 
 - Módulos principales:
   - `asyncio` para programación asíncrona
   - `multiprocessing` para procesamiento paralelo
@@ -23,6 +24,9 @@ Este proyecto implementa una simulación avanzada de un sistema hospitalario uti
   - `random` para simulación de tiempos variables
 
 ## Estructura del Proyecto
+
+- `simulacion-hospitalaria.py`: Código de la simulación sin el uso de un modelo preentrenado.
+- `simulacion-hospitalaria-ia.py`: Código de la simulación que incluye el modelo `VGG16` para el procesamiento de imágenes en el diagnostico automatizado. 
 
 El sistema está organizado en las siguientes etapas principales:
 
@@ -34,7 +38,8 @@ El sistema está organizado en las siguientes etapas principales:
 ## Requisitos del Sistema
 
 - Python 3.6 o superior
-- Sistema operativo compatible con asyncio y multiprocessing
+- Sistema operativo compatible con tensorflow, asyncio, threading y multiprocessing
+- 
 
 ## Instalación
 
@@ -48,14 +53,19 @@ git clone git@github.com:im-krizox/practica-concurrencia-paralelismo.git
 cd practica-concurrencia-paralelismo/
 ```
 
-3. Ejecutar el script:
+3. Instalar las dependencias del proyecto:
+```bash
+pip install tensorflow Pillow
+```
+
+4. Ejecutar el script:
 ```bash
 python simulacion-hospitalaria.py
 ```
 
 ## Uso
 
-El sistema simula automáticamente el procesamiento de pacientes a través de las diferentes etapas del hospital. Por defecto, se simulan 5 pacientes, pero este número puede ser modificado en el código según las necesidades.
+El sistema simula automáticamente el procesamiento de pacientes a través de las diferentes etapas del hospital. Además de que también se incluye otra simulación que emplea el uso de modelo preentrenado para dar un diagnostico automatizado de acuerdo a una imagen.
 
 ## Licencia
 
