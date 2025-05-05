@@ -26,7 +26,9 @@ Este proyecto implementa una simulación avanzada de un sistema hospitalario uti
 ## Estructura del Proyecto
 
 - `simulacion-hospitalaria.py`: Código de la simulación sin el uso de un modelo preentrenado.
-- `simulacion-hospitalaria-ia.py`: Código de la simulación que incluye el modelo `VGG16` para el procesamiento de imágenes en el diagnostico automatizado. 
+- `simulacion-hospitalaria-ia.py`: Código de la simulación que incluye el modelo `VGG16` para el procesamiento de imágenes en el diagnostico automatizado.
+- `requirements.txt`: Archivo con las dependencias necesarias.
+- `Reporte.pdf`: Reporte de la práctica en formato PDF.
 
 El sistema está organizado en las siguientes etapas principales:
 
